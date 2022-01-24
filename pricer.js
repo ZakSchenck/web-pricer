@@ -1,6 +1,6 @@
 let pageViews = document.getElementById('pageviews');
 let price = document.getElementById('price');
-let slider = document.getElementById('slider');
+let slider = document.querySelector('.slider');
 let checkbox = document.getElementById('checkbox');
 
    function myFunc() {
@@ -56,5 +56,8 @@ slider.addEventListener('input', function () {
     myFunc();
 })
 
+checkbox.addEventListener('click', function() {
+    myFunc();
+})
 
 

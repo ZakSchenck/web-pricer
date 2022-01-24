@@ -6,14 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="pricer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1 id="pageviews">100K PAGEVIEWS</h1>
-<h1 id="price">$16.00</h1>
-<input type="range" min="1" max="5" id="slider">
-<p>Monthly</p>
-<input type="checkbox" id="checkbox">
-<p>yearly</p>
+<div class="top-container">
+    <h1 id="traffic">Simple, traffic-based pricing</h1>
+    <p style="color: gray" id="signup">Sign-up for our 30-day trial. No credit card required.</p>
+</div>
+<div class="main-container">
+    <div class="number-container">
+        <h3 id="pageviews" class="gray-styling">100K PAGEVIEWS</h3>
+        <div class="price-container">
+            <h1 id="price">$16.00</h1>
+            <h3 class="gray-styling"> / month</h3>
+        </div>
+    </div>
+
+    <input type="range" min="1" max="5" class="slider">
+
+    <div class="checkbox-container">
+        <p class="gray-styling">Monthly</p>
+        <input type="checkbox" id="checkbox">
+        <p class="gray-styling">Yearly</p>
+        <p class="discount">-25%</p>
+    </div>
+    <hr>
+    <div class="check-container">
+        <div class="check-column">
+            <div class="check-img-1">
+                <img src="icon-check.svg" class="img">
+                <p class="gray-styling">Unlimited websites</p>
+            </div>
+            <div class="check-img-1">
+                <img src="icon-check.svg" class="img">
+                <p class="gray-styling">100% data ownership</p>
+            </div>
+            <div class="check-img-1">
+                <img src="icon-check.svg" class="img">
+                <p class="gray-styling">Email reports</p>
+            </div>
+        </div>
+        <p id="start-trial">Start my trial</p>
+    </div>
+</div>
 <script src="pricer.js"></script>
 </body>
 </html>
