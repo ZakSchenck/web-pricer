@@ -151,7 +151,7 @@ hr {
         font-size: 3vw;
     }
     .main-container {
-        padding: 0;
+        padding: 8px;
     }
     .check-container {
         flex-direction: column;
