@@ -1,4 +1,5 @@
-body {
+
+.background-container {
     background-image: url(bg-pattern.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -40,7 +41,7 @@ body {
 
 .gray-styling {
     color: gray;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 #price {
@@ -57,8 +58,8 @@ body {
   }
 
 #checkbox {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
@@ -137,6 +138,7 @@ hr {
     display: flex;
     flex-direction: column;
 }
+
 
 @media all and (max-width: 600px) {
     .number-container {

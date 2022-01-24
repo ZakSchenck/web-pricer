@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web Pricer</title>
+    <link rel="shortcut icon" type="image/png" href="favicon-32x32.png"/>
     <link rel="stylesheet" href="pricer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="background-container">
 <div class="top-container">
     <h1 id="traffic">Simple, traffic-based pricing</h1>
     <p style="color: gray" id="signup">Sign-up for our 30-day trial. No credit card required.</p>
@@ -27,9 +29,12 @@
     <input type="range" min="1" max="5" class="slider">
 
     <div class="checkbox-container">
-        <p class="gray-styling">Monthly</p>
-        <input type="checkbox" id="checkbox">
-        <p class="gray-styling">Yearly</p>
+        <p class="gray-styling">Monthly billing</p>
+        <label class="switch">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox"></label>
+          </label>
+        <p class="gray-styling">Yearly billing</p>
         <p class="discount">-25%</p>
     </div>
     <hr>
@@ -50,6 +55,7 @@
         </div>
         <p id="start-trial">Start my trial</p>
     </div>
+</div>
 </div>
 <script src="pricer.js"></script>
 </body>
